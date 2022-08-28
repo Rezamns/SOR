@@ -1,0 +1,37 @@
+<img id="bg-img" src="../../../assets/images/mainWallpaper.jpg" alt="bg img">
+<button id="historyButton"  routerLink="/order-history" matTooltip="مشاهده تاریخچه سفارشات" type="button" class="button news-button">تاریخچه سفارشات</button>
+<div id="snackbar">به سامانه رزرو غذای شاتل خوش آمدید</div>
+<div class="container">
+  <br>
+    <div class="row shanbe">
+      <div style="justify-content: center;" class="col-12 mb-3">
+        <mat-tab-group mat-align-tabs="center" (selectedTabChange)="onWeekTabsChange($event)">
+          <ng-container *ngFor="let date of weekOrder">
+            <mat-tab label="{{date | foodReservationDate}}">
+              <mat-tab-group mat-align-tabs="center" (selectedTabChange)="onTabsChange($event)" [selectedIndex]="1">
+                <ng-container *ngFor="let day of dayOrder">
+                  <mat-tab label="{{day | week}}">
+                    <br>
+                    <mat-card-content class="mx-4">
+                      <div class="row">
+                        <div class="col-auto mb-3">
+                          <mat-card class="matcard">
+                            <!-- <mat-card-title class="text-center mx-3">
+                              <img src="../../../assets/images/cheloJoje.png" alt="جوجه کباب">
+                            </mat-card-title> -->
+                            <mat-card-content class="d-flex flex-column mt-4">
+                              <div class="d-flex flex-column align-items-center"></div>
+                            </mat-card-content>
+                          </mat-card>
+                        </div>
+                      </div>
+                    </mat-card-content>
+                  </mat-tab>
+                </ng-container>
+              </mat-tab-group>
+            </mat-tab>
+          </ng-container>
+        </mat-tab-group>
+      </div>
+    </div>
+</div>

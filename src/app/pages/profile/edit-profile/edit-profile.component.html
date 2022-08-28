@@ -1,0 +1,60 @@
+<img id="bg-img" src="../../../../assets/images/profile.jpg" alt="bg img">
+<div class="main vh-100 ">
+	<div class="container h-100">
+		<div class="row d-flex justify-content-center h-100 mt-5">
+			<div class=" col-12 col-lg-9 " >
+				<div style="background-color: rgba(255, 255, 255, 0.753);" class="card p-4">
+					<div class="row">
+						<form [formGroup]="editProfileForm" (ngSubmit)="submitEditProfileForm()">
+							<div class="card-body">
+								<div class="account-settings">
+									<div class="user-profile">
+										<div class="user-avatar">
+											<img src="../../../assets/images/Animation icons/Editprofile.gif" alt="user-avatar">
+										</div>
+										<h3>ویرایش</h3>
+									</div>
+								</div>
+							</div>
+						<div class="row">
+	
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="طبقه کاربر" class="form-label ">طبقه</label>
+									<input type="number" class="form-control" formControlName="Floor" placeholder="{{getEditableProfileData.Floor}}">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="کد شهر" class="form-label ">کد شهر</label>
+									<input type="number" class="form-control" formControlName="City" placeholder="{{getEditableProfileData.City}}">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">					
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="شماره ساختمان محل کار کاربر" class="form-label ">ساختمان</label>
+									<input type="text" class="form-control" formControlName="Building" placeholder="{{getEditableProfileData.Building}}">
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label matTooltip="کد شهر کاربر" class="form-label ">واحد</label>
+									<input type="text" class="form-control" formControlName="City" placeholder="{{getEditableProfileData.Section}}">
+								</div>
+							</div>
+						</div>
+						<div class="form-group text-center m-4">						
+							<button  routerLink="/profile" matTooltip="برگشت به صفحه اصلی" type="button" class="button news-button">برگشت</button>&nbsp;&nbsp;
+							<button (click)="submitEditProfileForm()"  matTooltip="ذخیره اطلاعات کاربر" type="button" class="button news-button">ذخیره</button>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

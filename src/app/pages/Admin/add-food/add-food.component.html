@@ -1,0 +1,8 @@
+<img id="bg-img" src="../../../../assets/images/add-food-img.jpg" alt="bg img">
+
+  <app-data-table [headerConfigUrl]="headerConfigUrl" [baseUrl]="href" [defaultSort]="'foodPrice'"
+    (sendRemoveItemId)="removeItemId($event)" (showEditSlide)="showEditSlide($event)"
+    (showAddSlide)="showAddSlide($event)">
+  </app-data-table>
+
+<app-slide-wrapper></app-slide-wrapper>

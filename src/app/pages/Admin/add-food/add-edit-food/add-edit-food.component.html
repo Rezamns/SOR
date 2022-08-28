@@ -1,0 +1,14 @@
+<div class="add-edit-food-form-container">
+  <div id="close" (click)="onCloseSlide()">بستن</div>
+  <form [formGroup]="addEditForm" (ngSubmit)="submitAddEditForm()">
+    <mat-form-field appearance="outline">
+      <mat-label>نام غذا</mat-label>
+      <input formControlName="Name" matInput placeholder=" نام غذا را وارد کنید">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>قیمت غذا</mat-label>
+      <input formControlName="Price" matInput placeholder="قیمت غذا را وارد کنید">
+    </mat-form-field>
+    <button id="submit" mat-button type="submit">{{submitButtonTitle}}</button>
+  </form>
+</div>

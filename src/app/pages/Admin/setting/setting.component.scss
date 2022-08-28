@@ -1,0 +1,56 @@
+.login-wrap {
+  background-color: rgba(233, 233, 233, 0.87);
+  border-radius   : 10px;
+}
+
+label,
+button,
+.check {
+  font-size: 15px;
+}
+
+#time {
+  border-radius: 5px;
+  padding      : 3px;
+  margin       : 5px;
+}
+
+mat-slide-toggle {
+  margin-right: 40px;
+}
+
+label,
+mat-card-title,
+input,
+mat-label,
+button {
+  font-family: 'IRANSans';
+  color      : black;
+}
+
+.button {
+  width        : 130px;
+  padding      : 15px 25px;
+  text-align   : center;
+  cursor       : pointer;
+  outline      : none;
+  color        : white;
+  background   : #3f51b5;
+  border       : none;
+  border-radius: 10px;
+  box-shadow   : 0 9px #999;
+}
+
+.button:active {
+  background: #3f51b5;
+  box-shadow: 0 3px rgba(80, 80, 80, 0.678);
+  transform : translateY(4px);
+}
+
+#bg-img {
+  position     : absolute;
+  width        : 100%;
+  height       : 100%;
+  z-index      : -1;
+  border-radius: 0px;
+}

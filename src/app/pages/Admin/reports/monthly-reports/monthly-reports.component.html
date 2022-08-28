@@ -1,0 +1,12 @@
+<img id="bg-img" src="../../../assets/images/M reports.png" alt="bg img">
+<mat-tab-group mat-align-tabs="center" animationDuration="2000ms">
+
+  <mat-tab label="گزارشات مالی">
+    <app-data-table [headerConfigUrl]="finantioalHeaderConfigurationUrl" [baseUrl]="finantioalBaseUrl"></app-data-table>
+  </mat-tab>
+  <mat-tab label="گزارشات چک کردن">
+    <app-data-table [headerConfigUrl]="checkReservationHeaderConfigurationUrl" [baseUrl]="checkReservationBaseUrl">
+    </app-data-table>
+  </mat-tab>
+
+</mat-tab-group>

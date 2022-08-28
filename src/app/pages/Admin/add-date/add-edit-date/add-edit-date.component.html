@@ -1,0 +1,10 @@
+<div class="add-edit-food-form-container">
+  <div id="close" (click)="onCloseSlide()">بستن</div>
+  <form [formGroup]="addEditForm" (ngSubmit)="submitAddEditForm()">
+    <mat-form-field appearance="outline">
+      <mat-label>تاریخ</mat-label>
+      <input formControlName="Date" matInput type="datetime-local">
+    </mat-form-field>
+    <button id="submit" mat-button type="submit">{{submitButtonTitle}}</button>
+  </form>
+</div>

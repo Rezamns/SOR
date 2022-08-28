@@ -1,0 +1,23 @@
+mat-card-title,
+button {
+  font-family: IRANSans;
+}
+
+.button {
+  width        : 130px;
+  padding      : 15px 25px;
+  text-align   : center;
+  cursor       : pointer;
+  outline      : none;
+  color        : white;
+  background   : #3f51b5;
+  border       : none;
+  border-radius: 10px;
+  box-shadow   : 0 9px #999;
+}
+
+.button:active {
+  background: #3f51b5;
+  box-shadow: 0 3px rgba(80, 80, 80, 0.678);
+  transform : translateY(4px);
+}

@@ -1,0 +1,37 @@
+.login-wrap {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius   : 10px;
+    justify-content : center;
+}
+
+.container {
+    width           : 50%;
+    border-radius   : 10px;
+    background-color: #ffffffcb;
+}
+
+.d-flex-center {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.mat-form-field {
+    width: 90%;
+}
+
+.mt-top {
+    margin-top: 30px;
+}
+
+.mt-top-2 {
+    margin-top: 10px;
+}
+
+mat-error,
+input,
+h2,
+button,
+mat-form-field {
+    font-family: IRANSans;
+}

@@ -1,0 +1,9 @@
+<img id="bg-img" src="../../../assets/images/D reports.jpg" alt="bg img">
+<mat-tab-group mat-align-tabs="center" animationDuration="2000ms">
+  <mat-tab label="گزارشات هر واحد">
+    <app-data-table [headerConfigUrl]="addressHeaderConfigurationUrl" [baseUrl]="addressBaseUrl"></app-data-table>
+  </mat-tab>
+  <mat-tab label="گزارشات برای رستوران">
+    <app-data-table [headerConfigUrl]="resturantHeaderConfigurationUrl" [baseUrl]="resturantBaseUrl"></app-data-table>
+  </mat-tab>
+</mat-tab-group>

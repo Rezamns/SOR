@@ -1,0 +1,31 @@
+<div class="add-edit-food-form-container">
+  <div id="close" (click)="onCloseSlide()">بستن</div>
+  <form [formGroup]="addEditForm" (ngSubmit)="submitAddEditForm()">
+
+    <mat-form-field appearance="fill">
+      <mat-label>انتخاب تاریخ</mat-label>
+      <mat-select formControlName="CalanderDate" required>
+        <mat-option>--</mat-option>
+        <ng-container *ngFor="let item of date;">
+          <mat-option (click)="onChangheDate(item.Id)" [value]="item.Date">
+            {{item.Date}}
+          </mat-option>
+        </ng-container>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>انتخاب غذا</mat-label>
+      <mat-select formControlName="FoodName" required>
+        <mat-option>--</mat-option>
+        <ng-container *ngFor="let item of food;">
+          <mat-option (click)="onChangheFoodName(item.Id)" [value]="item.Name">
+            {{item.Name}}
+          </mat-option>
+        </ng-container>
+      </mat-select>
+    </mat-form-field>
+
+    <button id="submit" mat-button type="submit">{{submitButtonTitle}}</button>
+  </form>
+</div>

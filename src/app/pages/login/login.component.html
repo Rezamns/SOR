@@ -1,0 +1,51 @@
+<body id="page">
+    <section>
+        <ul class="cb-slideshow">
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>                             
+        </ul>
+    </section>
+
+    <section>
+        <mat-card class="py-5 login-wrap mx-5">
+            <div class="text-center">
+
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="d-flex-center">
+                    <div class="container"><br>
+                        <h2>سامانه رزرو غذا</h2>
+                        <div>
+
+                            <mat-form-field>
+                                <input matTooltip="نام کاربری خود را در اینجا وارد کنید" matInput placeholder="نام کاربری" formControlName="Username">
+                                <mat-error *ngIf="!loginForm.get('user_name')?.errors?.required && (loginForm.get('user_name')?.errors?.pattern)">
+                                    نام کاربری وارد شده معتبر نمی باشد
+                                </mat-error>
+                                <mat-error *ngIf="loginForm.get('user_name')?.invalid && (loginForm.get('user_name')?.dirty || loginForm.get('user_name')?.touched) && loginForm.get('user_name')?.errors?.required">
+                                    وارد کردن نام کاربری الزامی می باشد
+                                </mat-error>
+                            </mat-form-field>
+
+                        </div>
+                        <div class="mt-top-2">
+
+                            <mat-form-field>
+                                <input matTooltip="رمز عبور خود را در اینجا وارد کنید" matInput type="password" placeholder="رمز عبور" formControlName="password">
+                                <mat-error *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched) && loginForm.get('password')?.errors?.required">
+                                    وارد کردن رمز عبور الزامی می باشد
+                                </mat-error>
+                            </mat-form-field>
+
+                        </div>
+                        <div matTooltip="ورود به سامانه رزرو غذای شاتل" class="mt-top">
+                            <button [disabled]="!loginForm.valid" mat-raised-button color="primary" mat-button>ورود</button>
+                        </div><br>
+                    </div>
+                </form>
+            </div>
+        </mat-card>
+    </section>
+</body>

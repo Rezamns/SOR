@@ -1,0 +1,30 @@
+<img id="bg-img" src="../../../../assets/images/time.png" alt="bg img">
+<br>
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5 px-5">
+            <mat-card class="py-5 login-wrap mx-5 mx-sm-3">
+                <mat-card-title class="text-center mb-5 mt-3">تنظیمات ساعت رزرو </mat-card-title>
+                <mat-card-content class="d-flex flex-column justify-content-center mx-3 mx-sm-5 ">
+                    <form [formGroup]="settingMaximumDateReservationForm">
+                        <div class="form-group mb-1">
+                            <label> تنظیم به صورت بازه ای:</label>
+                            <input [readOnly]="isChecked" (change)="isSetCustomDate = true"
+                                matTooltip="انتخاب زمان برای غیرفعال کردن قابلیت سفارش" type="time" id="time"
+                                formControlName="date">
+                        </div>
+                    </form>
+                    <div class="form-group check">
+                        <label> تنظیم به صورت دستی:</label>
+                        <mat-slide-toggle [disabled]="isSetCustomDate" [(ngModel)]="isChecked"></mat-slide-toggle>
+                    </div>
+                    <div class="my-4 text-center">
+                        <button matTooltip="ذخیره تنظیمات اعمال شده" class="button news-button"
+                            (click)="onSubmitData()">ذخیره</button>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<img id="bg-img" src="../../../assets/images/profile.jpg" alt="bg img">
+<div class="main vh-100 ">
+	<div class="container h-100">
+		<div class="row d-flex justify-content-center h-100 mt-5">
+			<div class=" col-12 col-lg-9 " >
+				<div style="background-color: rgba(255, 255, 255, 0.753);" class="card p-4">
+					<div class="card-body">
+						<div class="row">
+
+							<div class="card-body">
+								<div class="account-settings">
+									<div class="user-profile">
+										<div class="user-avatar">
+											<img src="../../../assets/images/Animation icons/profile.gif" alt="user-avatar">
+										</div>
+										<h5 class="user-name">{{profileData.FirstName}} {{profileData.LastName}}</h5>
+									</div>
+								</div>
+							</div>		
+
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="نام و نام خانوادگی" class="form-label ">نام و نام خانوادگی</label>
+							    	<input type="email" class="form-control" placeholder="{{profileData.FirstName}} {{profileData.LastName}}" disabled>
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="نام خانوادگی کاربر" class="form-label ">نام کاربری</label>
+							    	<input type="email" class="form-control" placeholder="{{profileData.UserName}}" disabled>
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="شماره پرسنلی کاربر" class="form-label">واحد</label>
+									<input type="number" class="form-control" placeholder="{{deliveryLocation.Section}}" readonly>
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group pb-3">
+									<label matTooltip="طبقه کاربر" class="form-label ">طبقه</label>
+									<input type="number" class="form-control" placeholder="{{deliveryLocation.Floor}}" readonly>
+								</div>
+							</div>
+
+						</div>
+					 <div class="row ">
+
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="form-group pb-3">
+								<label matTooltip="شماره ساختمان محل کار کاربر" class="form-label ">ساختمان</label>
+								<input type="number" class="form-control" placeholder="{{deliveryLocation.Building}}" readonly>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+								<label matTooltip="کد شهر کاربر" class="form-label ">کد شهر</label>
+								<input type="number" class="form-control" placeholder="{{deliveryLocation.City}}" readonly>
+							</div>
+						</div>
+
+					</div>
+				
+
+					<div class="row d-flex">
+						<div class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<div class="form-group text-center m-4">
+								<button  routerLink="/home" matTooltip="برگشت به صفحه اصلی" type="button" class="button news-button">برگشت</button>&nbsp;&nbsp;
+								<button  matTooltip="ویرایش اطلاعات کاربر" type="button" class="button news-button" (click)="onGoingToEditProfile()">ویرایش</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

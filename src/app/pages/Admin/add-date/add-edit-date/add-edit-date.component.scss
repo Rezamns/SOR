@@ -1,0 +1,23 @@
+mat-label,
+div,
+input,
+mat-form-field,
+button {
+    font-family: IRANSans;
+}
+
+#submit {
+    color           : white;
+    background-color: #3f51b5;
+    margin          : 10px;
+}
+
+mat-form-field {
+    margin: 10px;
+}
+
+#close {
+    color           : white;
+    background-color: red;
+    text-align      : center;
+}

@@ -1,0 +1,16 @@
+<img id="bg-img" src="../../../../assets/images/add-date-img.png" alt="bg img">
+ 
+<app-data-table 
+    [headerConfigUrl]="headerConfigUrl"
+    [baseUrl]="baseUrl"
+    [defaultSort]="'date'"
+    (sendRemoveItemId)="removeItemId($event)" 
+    (showEditSlide)="showEditSlide($event)"
+    (showAddSlide)="showAddSlide($event)">
+  </app-data-table>
+
+<app-slide-wrapper></app-slide-wrapper>
+
+
+
+
