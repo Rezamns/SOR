@@ -1,0 +1,13 @@
+.show-task {
+  visibility: visible;
+}
+.hidden-task {
+  visibility: hidden;
+}
+.slide-wrapper-container {
+  height: 100vh;
+  position: absolute;
+  background: #c2cbff;
+  box-shadow: 0 0 20px black;
+  top: 1px;
+}

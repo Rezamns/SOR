@@ -1,0 +1,12 @@
+<div class="dialog-container">
+  <div>
+    <div>
+      <p>{{data.title}}</p>
+    </div>
+    <p *ngIf="data.description">{{data.description}}</p>
+  </div>
+  <div class="dialog-button-box">
+    <button [ngClass]="{'dialog-yes-button': data.isConfirm}" (click)="onYesClick()">{{data.yesButton}}</button>
+    <button (click)="onNoClick()">{{data.noButton}}</button>
+  </div>
+</div>

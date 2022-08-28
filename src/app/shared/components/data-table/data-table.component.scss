@@ -1,0 +1,135 @@
+.datatable-container {
+  position: relative;
+  background-color: white;
+}
+
+.datatable-table-container {
+  position: relative;
+  min-height: 200px;
+  margin-top: -24px;
+  max-height: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.datatable-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.096);
+  align-items: center;
+  justify-content: center;
+}
+
+.datatable-rate-limit-reached {
+  max-width: 360px;
+  text-align: center;
+}
+
+.mat-column-number,.mat-column-state {
+  max-width: 64px;
+}
+
+.mat-column-created {
+  max-width: 124px;
+}
+
+div, a, th, td, button, mat-paginator{
+  font-family: IRANSans;
+}
+
+button{
+  border: none;
+  background-color: white;
+}
+
+mat-paginator{
+  direction: ltr;
+}
+
+#add-icon{
+  height: 30px;
+  width:  30px;
+}
+
+#refresh-icon{
+  height: 38px;
+  width:  38px;
+}
+
+#delete-icon{
+  height: 20px;
+  width:  20px;
+}
+
+#filter-icon{
+  height: 25px;
+  width:  25px;
+}
+
+.button {
+  width: 130px;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background: #3f51b5;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+  
+.button:active {
+  background: #3f51b5;
+  box-shadow: 0 3px rgba(80, 80, 80, 0.678);
+  transform: translateY(4px);
+}
+
+#datatable-filters{
+  display: none;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: -5px;
+}
+
+.input{
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+#submitbutton {
+	text-align: center;
+	margin: 10px;
+	height: 50px;
+	width: 150px;
+	padding: 15px 25px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background: #3f51b5;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 9px #999;
+}
+	
+#submitbutton:active {
+	background: #3f51b5;
+	box-shadow: 0 3px rgba(80, 80, 80, 0.678);
+	transform: translateY(4px);
+}
