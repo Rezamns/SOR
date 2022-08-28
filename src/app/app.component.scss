@@ -1,0 +1,104 @@
+mat-sidenav {
+	width     : 180px;
+	height    : 100%;
+	background: rgb(63, 81, 181);
+	transform : translateX(-23);
+}
+
+mat-divider {
+	margin-top      : 16px;
+	margin-bottom   : 16px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.name {
+	margin-top : 8px;
+	font-weight: normal;
+}
+
+.designation {
+	margin-top: 2px;
+	font-size : 0.7rem;
+	color     : lightgrey;
+}
+
+#shatel-logo {
+	width : 50%;
+	height: 50%;
+}
+
+span,
+li,
+ul {
+	font-family: 'IRANSans';
+}
+
+mat-list-item:hover {
+	color: white;
+}
+
+mat-list-item {
+	transition: all 0.3s;
+}
+
+.menu {
+	background-color: transparent;
+	border          : none;
+	cursor          : pointer;
+	display         : flex;
+	padding         : 0;
+}
+
+.line {
+	fill        : none;
+	stroke      : white;
+	stroke-width: 6;
+	transition  : stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);		
+}
+
+.line1 {
+	stroke-dasharray: 60 207;
+	stroke-width    : 6;
+}
+
+.line2 {
+	stroke-dasharray: 60 60;
+	stroke-width    : 6;
+}
+
+.line3 {
+	stroke-dasharray: 60 207;
+	stroke-width    : 6;
+}
+
+.opened .line1 {
+	stroke-dasharray : 90 207;
+	stroke-dashoffset: -134;
+	stroke-width     : 6;
+}
+
+.opened .line2 {
+	stroke-dasharray : 1 60;
+	stroke-dashoffset: -30;
+	stroke-width     : 6;
+}
+
+.opened .line3 {
+	stroke-dasharray : 90 207;
+	stroke-dashoffset: -134;
+	stroke-width     : 6;
+}
+
+.sidebar-icons{
+	height: 30px;
+	width:  30px;
+}
+
+// وسط چین کردن dropdown
+
+// mat-menu, #matMenu, #settingMenu, mat-menu-item{
+// 	transform: translateX(-23);
+
+// 	position: relative;
+// 	right: 20%;
+// }

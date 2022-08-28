@@ -1,0 +1,97 @@
+<mat-toolbar class="d-flex flex-row justify-content-between" color="primary">
+  <div class="right d-flex justify-content-center align-items-center">
+    
+
+      <button (click)="sidenav.toggle()" class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+
+    
+  </div>
+
+  <div class="left d-flex justify-content-center align-items-center">
+    <span>شهریار خسروی</span>
+
+    <button mat-icon-button  [matMenuTriggerFor]="menu">
+      <mat-icon matTooltip="خروج ار حساب کاربری">person</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button routerLink="/login" mat-menu-item (click)="onLogOut()">
+        <span>خروج</span>
+      </button>
+    </mat-menu>
+
+  </div>
+
+</mat-toolbar>
+<mat-sidenav-container autosize class="vh-100">
+    <mat-sidenav #sidenav closed mode="side">
+
+      <div class="text-center">
+        <a href="https://www.shatel.ir">
+        <img id="shatel-logo" matTooltip="وب سابت شاتل" src="../../assets/images/shatel-logo.png">
+        </a>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <mat-nav-list>
+        <mat-list-item routerLink="/home">
+          <img class="sidebar-icons" src="../assets/images/Animation icons/home icon.gif" alt="profiles">&nbsp;&nbsp;
+          <b><span >صفحه اصلی</span></b>
+        </mat-list-item>
+
+        <mat-list-item routerLink="profile" class="menu-button">
+          <img class="sidebar-icons" src="../assets/images/Animation icons/profile icon.gif" alt="profiles">&nbsp;&nbsp;
+          <b><span>پروفایل</span></b>
+        </mat-list-item>
+
+        <mat-list-item  [matMenuTriggerFor]="reportMenu">
+          <img class="sidebar-icons" src="../assets/images/Animation icons/report icon.gif" alt="profiles">&nbsp;&nbsp;
+          <b><span>گزارشات</span></b>
+          <mat-menu #reportMenu="matMenu">
+
+            <button routerLink="Dreports" mat-menu-item >
+              <span> گزارش روزانه</span>
+            </button>
+            <button routerLink="Mreports" mat-menu-item >
+              <span> گزارش ماهانه</span>
+            </button>
+         
+          </mat-menu>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="isAdmin"  [matMenuTriggerFor]="settingMenu">
+          <img class="sidebar-icons" src="../assets/images/Animation icons/setting icon.gif" alt="profiles">&nbsp;&nbsp;
+          <b><span>تنظیمات</span></b>
+          <mat-menu #settingMenu="matMenu">
+
+            <button routerLink="setting" mat-menu-item>
+              <span> تنظیمات ساعت</span>
+            </button>
+
+            <button routerLink="add-food" mat-menu-item>
+              <span> ایجاد غذا</span>
+            </button>
+
+            <button routerLink="add-date" mat-menu-item>
+              <span> ایجاد تاریخچه</span>
+            </button>
+
+            <button routerLink="add-menu" mat-menu-item>
+              <span> ایجاد منو</span>
+            </button>
+         
+          </mat-menu>
+        </mat-list-item>   
+
+      </mat-nav-list>
+
+    </mat-sidenav>
+      <router-outlet></router-outlet>
+</mat-sidenav-container>
