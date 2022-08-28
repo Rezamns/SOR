@@ -1,0 +1,16 @@
+{
+  "headerConfig": [
+    {
+      "headerName": "تاریخ",
+      "field": "Date"
+    },
+    {
+      "headerName": "عملیات",
+      "field": "action"
+    },
+    {
+      "headerName": "افزودن",
+      "field": "add"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "headerConfig": [
+        {
+            "headerName": "نام غذا",
+            "field": "FoodName"
+        },
+        {
+        "headerName": "تعداد غذا",
+        "field": "FoodCount"
+        },
+        {
+        "headerName": "تاریخ",
+        "field": "Date"
+        } 
+    ]
+ }

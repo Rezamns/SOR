@@ -1,0 +1,20 @@
+{
+  "headerConfig": [
+    {
+      "headerName": "تاریخ",
+      "field": "CalanderDate"
+    },
+    {
+      "headerName": "نام غذا",
+      "field": "FoodName"
+    },
+    {
+      "headerName": "عملیات",
+      "field": "action"
+    },
+    {
+      "headerName": "افزودن",
+      "field": "add"
+    }
+  ]
+}

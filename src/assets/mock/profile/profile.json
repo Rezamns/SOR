@@ -1,0 +1,8 @@
+{
+  "city": 0,
+  "building": "string",
+  "floor": 0,
+  "section": "string",
+  "locationDetails": "string",
+  "id": 2
+}

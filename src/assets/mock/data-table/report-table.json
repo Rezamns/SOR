@@ -1,0 +1,29 @@
+{
+    "headerConfig": [
+      {
+        "headerName": "نام",
+        "field": ""
+      },
+      {
+        "headerName": "نام خانوادگی",
+        "field": ""
+      },
+      {
+        "headerName": "نوع غذا",
+        "field": ""
+      },
+      {
+        "headerName": "تعداد غذا",
+        "field": ""
+      },
+      {
+        "headerName": "تاریخ",
+        "field": ""
+      },
+      {
+        "headerName": "نام کاربری",
+        "field": ""
+      }
+    ]
+  }
+  

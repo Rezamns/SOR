@@ -1,0 +1,28 @@
+{
+    "headerConfig": [
+      {
+        "headerName": "نام و نام خانوادگی",
+        "field": "FullName"
+      },
+      {
+        "headerName": "نام کاربری",
+        "field": "userName"
+      },
+      {
+        "headerName": "نام غذا",
+        "field": "FoodName"
+      },
+      {
+        "headerName": "تعداد غذا",
+        "field": "FoodCount"
+      },
+      {
+        "headerName": "دپارتمان",
+        "field": "Department"
+      },
+      {
+        "headerName": "ساختمان",
+        "field": "Building"
+      }
+    ]
+ }

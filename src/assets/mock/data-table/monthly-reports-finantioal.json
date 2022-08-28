@@ -1,0 +1,28 @@
+{
+    "headerConfig": [
+      {
+        "headerName": "شناسه",
+        "field": "Id"
+      },
+      {
+        "headerName": "نام و نام خانوادگی",
+        "field": "FullName"
+      },
+      {
+        "headerName": "کد پرسونلی",
+        "field": "UserId"
+      },
+      {
+        "headerName": "ماه",
+        "field": "Month"
+      },
+      {
+        "headerName": "تعداد غذا",
+        "field": "FoodCount"
+      },
+      {
+        "headerName": "هزینه یک ماه",
+        "field": "MonthlyCost"
+      }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "headerConfig": [
+    {
+      "headerName": "نام غذا",
+      "field": "Name"
+    },
+    {
+      "headerName": "قیمت غذا",
+      "field": "Price"
+    },
+    {
+      "headerName": "عملیات",
+      "field": "action"
+    },
+    {
+      "headerName": "افزودن",
+      "field": "add"
+    }
+  ]
+}

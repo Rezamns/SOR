@@ -1,0 +1,83 @@
+{
+  "foodReservationData": [
+    {
+      "date": "currentWeek",
+      "foodReservation": [
+        {
+          "day" : "saturday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "sunday" ,
+          "reservationList" : []             
+        },
+
+        {
+          "day" : "monday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "tuesday" ,
+          "reservationList" : []
+        },   
+
+        {
+          "day" : "wednesday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "thursday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "friday" ,
+          "reservationList" : []
+        }
+      ]
+    },
+
+    {
+      "date": "nextWeek",
+      "foodReservation":  [
+        {
+          "day" : "saturday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "sunday" ,
+          "reservationList" : []             
+        },
+
+        {
+          "day" : "monday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "tuesday" ,
+          "reservationList" : []
+        },   
+
+        {
+          "day" : "wednesday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "thursday" ,
+          "reservationList" : []
+        },
+
+        {
+          "day" : "friday" ,
+          "reservationList" : []
+        }
+      ]
+    }
+  ]
+}
